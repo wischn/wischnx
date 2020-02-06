@@ -1,42 +1,26 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from "prop-types";
+import React from "react";
+import { useStaticQuery, graphql, Link} from "gatsby";
+import logo from "../assets/images/svg/logo_gr.svg";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = () => {
+  return (
+    <header id="header" className="sticky">
+      <div className="logo">
+       <Link to="/#header"><img src={logo} alt="Wischn Logo"/></Link>
+      </div>
+      <nav className="nav">
+        <ul>
+          <li><Link to="/about/" activeClassName="activeli">About</Link></li>
+          <li><Link to="/portfolio/" activeClassName="activeli">Portfolio</Link></li>
+          <li><Link to="/contact/" activeClassName="activeli">Contact</Link></li>
+          <li><Link to="/blog/" activeClassName="activeli">Blog</Link></li>
+        </ul>
+      </nav>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
-Header.defaultProps = {
-  siteTitle: ``,
+    </header>
+  )
 }
 
 export default Header

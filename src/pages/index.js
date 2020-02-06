@@ -1,21 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import Hero from "../components/Hero"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import About from "../components/About"
+import Contact from "../components/Contact"
+import Image from "../components/image"
+// import { Link } from "gatsby"
+// import Image from "../components/image"
+// import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const IndexPage = () => (
+  <>
+  <Hero />
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+      <section className="sec">
+        <div className="imgs"><Image src="tree.jpg"/></div>
+        <div className="welcome">
+          <h1 className="h1">willkommen bei wischn.</h1>
+          <p className="p">Warum muss Digitalisierung was schlechtes sein? Ist es nicht ein schöner Gedanke, dass uns Arbeit abgenommen wird und wir uns den Dingen widmen können, die uns wirklich wichtig sind?</p>
+        </div>
+      </section>
+      <section className="sec dark"><About /></section>
+      <section className="sec"><Contact /></section>
+
   </Layout>
+  </>
 )
 
 export default IndexPage
