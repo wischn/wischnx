@@ -1,0 +1,30 @@
+
+
+label {
+    font-family: 'Raleway', sans-serif;
+    color: $black;
+    display: block;
+    padding: 1%;
+}
+
+.formwrap {
+    margin: 1%;
+    border: solid 1px $black;
+    padding: 5%;
+    
+}
+
+.inputx {
+    background-color: $white;
+    border: solid 1px $mid-color;
+    width: 50%;
+}
+
+inputx:focus {
+    text-decoration: none;
+    text-shadow: none;
+}
+
+textarea {
+    resize: none;
+  }

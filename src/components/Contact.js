@@ -2,21 +2,23 @@ import React from 'react';
 
 const Contact = () => {
     return (
+        <div className="formwrap">
         <form name="contact" method="POST" data-netlify="true">
         <label>
-          mail
-          <input type="email" name="email" />
+          mail<br/>
+          <input type="email" name="email"  className="inputx"/>
         </label>
         <label>
-          name
-          <input type="text" name="name" />
+          name<br/>
+          <input type="text" name="name"  className="inputx"/>
         </label>
         <label>
-          nachricht
-          <input type="text" name="message" />
+          nachricht<br/>
+          <textarea name="message"  className="inputx" />
         </label>
         <button type="submit">Senden</button>
       </form>
+      </div>
          )
 }
 
