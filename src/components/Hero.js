@@ -8,7 +8,6 @@ const Hero = () => {
     <div className="hero">
         <div className="hero-wrapper">
             <img src={logo} alt="Wischn logo"/>
-            <p className="p">Manufaktur nachhaltiger Digitalisierung</p>
        </div>
        <button onClick={() => scrollTo("#main")}>&#9660;</button>
     </div>

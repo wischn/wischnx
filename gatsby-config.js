@@ -9,26 +9,34 @@ module.exports = {
         url: `https://twitter.com/wischnx`,
       },
       {
-        name: `GitHub`,
-        url: `https://github.com/wu17mine`,
+        name: `Instagram`,
+        url: `https://instagram.com/wischnx`,
       },
+      {
+        name: `GitHub`,
+        url: `https://github.com/wischn`,
+      },
+      {
+        name: `dribbble`,
+        url: `https://dribbble.com/wischn`,
+      }
     ],
     menuLinks:[
-      {
-        name:'home',
-        link:'/',
-      },
-      {
-        name:'blog',
-        link:'/blog',
-      },
       {
         name:'about',
         link:'/about',
       },
       {
+        name:'portfolio',
+        link:'/portfolio',
+      },
+      {
         name:'contact',
         link:'/contact',
+      },
+      {
+        name:'blog',
+        link:'/blog',
       }
     ]
   },
@@ -48,6 +56,13 @@ module.exports = {
     //   path: `${__dirname}/src/posts/`,
     //   },
     // },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `4m06a32a5fay`,
+        accessToken: `Il_EIAw5mbPKpJVHvnnnQ2tMSQaSytCzakne4qyaneo`,
+      },
+    },
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
@@ -79,7 +94,7 @@ module.exports = {
         icon: `src/assets/images/png/icon_fl.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-offline`,
+   `gatsby-plugin-offline`,
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

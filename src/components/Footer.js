@@ -1,10 +1,13 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Footer = () => {
     // const data = #
     return (
       <footer>
-          <p className="p">&copy; 2020 by Annika Wischnewsky. All rights reserved.</p>
+          <p className="p">&copy; 2020 by Annika Wischnewsky. All rights reserved.</p> 
+          <Link to="/impressum/">Impressum</Link>
+          <Link to="#">Datenschutz</Link>
           </footer>
     )
 }

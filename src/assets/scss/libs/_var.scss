@@ -12,15 +12,28 @@
 
 /*headings*/
 
-.h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2em;
-    color: $black;
-    line-height: 2em;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+    height: 100%;
+    // box-sizing: border-box;
 }
 
-.p {
+h1 {
     font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    color: $black;
+    line-height: 3em;
+}
+
+h4 {
+    font-family: 'Raleway', sans-serif;
+    color: $black;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.2em;
     font-size: 1.0em;
     font-weight: 100;
@@ -28,14 +41,13 @@
 }
 
 a:hover{
-    color: $dark-color;
+    color: $mid-color;
 }
 
 
 .sec {
-    height: 90vh;
-    padding:10%;
-    align-items: center;
+    // height: 90vh;
+    padding: 5%;
     // border-bottom: 1px solid $dark-color ;
 }
 
@@ -52,3 +64,73 @@ a:hover{
 .imgs {
     max-width: 40vp;
 }
+
+.imglink:hover {
+    filter: grayscale(80%) blur(2px);
+}   
+
+
+// löschen wenn bessere Lösung, aktuell nur für Blog ( ist doppelt bei header)
+a {
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    font-size: 1.2em;
+    color: $grey;
+    text-decoration: none;
+    cursor: crosshair;
+    caret-color: $dark-grey;
+    border-radius: 4px;
+    padding: 1px 10px;
+  }
+// auch
+ul {
+    list-style-type: none;
+}
+
+.portfolio {
+    position: relative;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: column;
+}
+
+  @media only screen and (max-width: 500px)
+    {
+        .portfolio {
+            display: block;
+
+        }
+
+    } 
+
+.containerp {
+    padding: 30%;
+    min-width: 100px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    top: 50%;
+    color: white;
+    border: solid black 7px;
+}
+
+
+
+.centeredp > a {
+    font-size: 2em;
+}
+
+.containerp:hover .centeredp {
+    display: block;
+}
+
+.xlogo {
+    width: 10%;
+    height: auto;
+}
+
+/* .containerp:hover {
+    filter: grayscale(100%) blur(5px);
+} */ 
